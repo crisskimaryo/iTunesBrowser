@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title [innerText]="artist.name"></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="artist">
+  <ion-slides id="album-slides">
+    <ion-slide *ngFor="let album of albums">
+      <h3 [innerText]="album.collectionName"></h3>
+      <p>
+        <span>{{album.collectionPrice}}</span>
+        <span>{{album.currency | toSymbol }}</span>
+      </p>
+      <img [src]="album.artworkUrl100" />
+    </ion-slide>
+  </ion-slides>
+</ion-content>

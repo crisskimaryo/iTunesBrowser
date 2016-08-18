@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page Uno</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="page1">
+
+  <h3>Let's get this done!</h3>
+
+  <p>
+    <button primary (click)="goToSearch()">Go to search</button>
+    <!--<button primary [navPush]="theSearchPage">Go to search</button>-->
+  </p>
+
+  <button secondary menuToggle>Toggle Menu</button>
+
+</ion-content>
